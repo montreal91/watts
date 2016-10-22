@@ -5,35 +5,320 @@
   <title>Starfish by P. Watts</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type="text/css">
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
-<body>
-  <div id="my_sidenav" class="sidenav">
+<body class="myfont">
+  <ul class="topnav" id="my_topnav">
+    <li class="showsidebar"><a class="navlink" href="javascript:void(0)" onclick="open_nav()">>></a></li>
+    <li><a href="#" class="active">Starfish</a></li>
+    <li><a href="#">Maelstrom</a></li>
+    <li><a href="#">Behemoth</a></li>
+    <li><a hrev="javascript:void(0)">License</a>
+  </ul>
+  <div id="my_sidenav" class="sidenav myfont">
     <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
-    <a href="#">Prelude</a>
-    <a href="#">Benthos</a>
+    <a href="javascript:void(0)" onclick="open_tab(event, 'home')" class="navlink active">Home</a>
+    <a href="javascript:void(0)" onclick="open_tab(event, 'prelude')" class="navlink">Prelude</a>
+    <a href="#" class="accordion" onclick="toggle_accordion(event)">Benthos</a>
+    <div class="panel">
+      <a href="#">Housecleaning</a>
+    </div>
     <a href="#">Nekton</a>
     <a href="#">References</a>
     <a href="#">Acknowledgments</a>
-    <a href="#">Creative Commons Licensing Information</a>
   </div>
-  <button class="w3-btn myfont" onclick="open_nav()">Open</button>
-  <div id="main" class="w3-container myfont">
-    <H1 class="myfont">Starfish</H1>
-    <h3 class="myfont">Welcome to Beebe Station</h3>
-    <p>
-      You're three kilometers below the surface of the Pacific Ocean. You're perched on the shoulder of an active volcano. The local fauna is very large and very nasty. If it doesn't kill you, a mudslide or an erupting smoker probably will.
-    </p>
-    <p>
-      Your fellow employees are rapists, pedophiles, borderline psychotics, and victims of same. 
-    </p>
-    <p>
-      You feel very lucky to be here.
-    </p>
-    <p>
-      This is a damn sight better than the life you left behind.
-    </p>
+  <div id="main">
+    <div id="default" class="content">
+      <H1>Starfish</H1>
+      <h3>By Peter Watts</h3>
+    </div>
+    <div id="home" class="content">
+      <H1 class="myfont">Starfish</H1>
+      <h3 class="myfont">Welcome to Beebe Station</h3>
+      <p>
+        You're three kilometers below the surface of the Pacific Ocean. You're perched on the shoulder of an active volcano. The local fauna is very large and very nasty. If it doesn't kill you, a mudslide or an erupting smoker probably will.
+      </p>
+      <p>
+        Your fellow employees are rapists, pedophiles, borderline psychotics, and victims of same. 
+      </p>
+      <p>
+        You feel very lucky to be here.
+      </p>
+      <p>
+        This is a damn sight better than the life you left behind.
+      </p>
+    </div>
+    <div id="prelude" class="content">
+      <p>For Susan Oshanek, on the off chance that she's still alive.</p>
+      <p>And for Laurie Channer—who to my unexpectedly good fortune, definitely is.</p>
+      <br>
+      <h1>Prelude: <i>Ceratius</i></h1>
+      <p>The abyss should shut you up.</p>
+      <p>
+        Sunlight hasn't touched these waters for a million years. Atmospheres accumulate by the hundreds here, the trenches could swallow a dozen Everests without burping. They say life itself got started in the deep sea. Maybe. It can't have been an easy birth, judging by the life that remains—monstrous things, twisted into nightmare shapes by lightless pressure and sheer chronic starvation.
+      </p>
+      <p>
+        Even here, inside the hull, the abyss weighs on you like the vault of a cathedral. It's no place for trivial loudmouth bullshit. If you speak at all, you keep it down. But these tourists just don't seem to give a shit.
+      </p>
+      <p>
+        Joel Kita's used to hearing a 'scaphe breathe around him, hearing it talk in clicks and hisses. He relies on those sounds; the readouts only confirm what the beast has already told him by the grumbling of its stomach. But <em>Ceratius</em> is a leisure craft, fully insulated, packed with excess headroom and reclining couches and little drink'n'drug dispensers set into the back of each seat. All he can hear today is the cargo, babbling.
+      </p>
+      <p>
+        He glances back over his shoulder. The tour guide, a mid-twenties Hindian with a zebra cut&mdash; Preteela someone&mdash; flashes him a brief, rueful smile. She's a relict, and she knows it. She can't compete with the onboard library, she doesn't come with 3-d animations or wraparound soundtrack. She's just a prop, really. These people pay her salary not because she does anything useful, but because she doesn't. What's the point of being rich if you only buy the essentials?
+      </p>
+      <p>
+        There are eight of them. One old guy in a codpiece, still closing on his first century, fiddles with his camera controls. The others are plugged into headsets, running a program carefully designed to occupy them through the descent without being so impressive that the actual destination is an anticlimax. It's a thin line, these days. Simulations are almost always better than real life, and real life gets blamed for the poor showing. 
+      </p>
+      <p>
+        Joel wishes this particular program was a bit better at holding the cargo's interest; they might shut up if they were paying more attention. They probably don't care whether Channer's sea monsters live up to the hype anyway. These people aren't down here because the abyss is impressive, they're here because it costs so much. 
+      </p>
+      <p>
+        He runs his eyes across the control board. Even that seems excessive; climate control and indive entertainment take up a good half of the panel. Bored, he picks one of the headset feeds at random and taps in, sending the signal to a window on his main display. 
+      </p>
+      <p>
+        An eighteenth-century woodcut of a Kraken comes to life through the miracle of modern animation. Crudely-rendered tentacles wrap around the masts of a galleon, pull it beneath chunky carved waves. A female voice, designed to maximize attention from both sexes: "We have always peopled the sea with monsters&mdash;"
+      </p>
+      <p>
+        Joel tunes out.
+      </p>
+      <p>
+        Mr. Codpiece comes up behind him, lays a familiar hand on his shoulder. Joel resists the urge to shrug it off. That's another problem with these tour subs; no real cockpit, just a set of controls at the front end of the passenger lounge. You can't shut yourself away from the cargo.
+      </p>
+      <p>
+        "Quite a layout," Mr. Codpiece says.
+      </p>
+      <p>
+        Joel reminds himself of his professional duties, and smiles.
+      </p>
+      <p>
+        "Been doing this run for long?" The whitecap's skin glows with a golden tan of cultured xanthophylls. Joel's smile grows a little more brittle. He's heard all about the benefits, of course; UV protection, higher blood oxygen, more energy &mdash; they say it even cuts down on your food requirements, not that any of these people have to worry about grocery money. Still, it's too bloody freakish for Joel's tastes. Implants should be made out of meat, or at least plastic. If people were meant to photosynthesize they'd have leaves. 
+      </p>
+      <p>
+        "I said&mdash;"
+      </p>
+      <p>
+        Joel nods. "Couple of years."
+      </p>
+      <p>
+        A grunt. "Didn't know Seabed Safaris was around that long."
+      </p>
+      <p>
+        "I don't work for Seabed Safaris," Joel says, as politely as possible. "I freelance." The whitecap probably doesn't know any better, comes from a generation when everyone pledged allegiance to the same master year after year. Nobody thought it was such a bad thing back then.
+      </p>
+      <p>
+        "Good for you." Mr. Codpiece gives him a fatherly pat on the shoulder.
+      </p>
+      <p>
+        Joel nudges the rudders a bit to port. They've been cruising just off the southeastern shoulder of the rift, floodlights doused; sonar shows a featureless landscape of mud and boulders. The rift itself is another five or ten minutes away. On the screen, the tourist program talks about giant squids attacking lifeboats during the Second World War, offers up a parade of archival photos as evidence; human legs, puckered with fist-sized conical wounds where horn-rimmed suckers cored out gobbets of flesh.
+      </p>
+      <p>
+        "Nasty. We going to be seeing any giant squids?"
+      </p>
+      <p>
+        Joel shakes his head. "Different tour."
+      </p>
+      <p>
+        The program launches into a litany of deepwater nasties; a piece of flesh washed up onto a Florida beach, hinting at the existence of octopus thirty meters across. Giant eel larvae. Hypothesized monsters that might once have fed on the great whales, anonymously dying out for lack of food.
+      </p>
+      <p>
+        Joel figures that ninety percent of this is bullshit, and the rest doesn't really count. Even giant squids don't go down into the <em>really</em> deep sea; hardly anything does. No food. Joel's been rooting around down here for years, and he's never seen any <em>real</em> monsters.
+      </p>
+      <p>
+        Except right here, of course. He touches a control; outside, a high-frequency speaker begins whining at the abyss.
+      </p>
+      <p>
+        "Hydrothermal vents bubble and boil along spreading zones in all of the world's oceans," the program chatters, "feeding crowds of giant clams and tubeworms over three meters long." Stock footage of a vent community. "And yet, even at the spreading zones, it is only the filter-feeders and muckrakers that become giants. The fish, vertebrates like ourselves, are few and far between&mdash; and only a few centimeters long." An eelpout wriggles feebly across the display, looking more like a dismembered finger than a fish.
+      </p>
+      <p>
+        "Except here," the program adds after a dramatic pause. "For there is something special about this tiny part of the Juan de Fuca Ridge, something unexplained. Here there be dragons."
+      </p>
+      <p>
+        Joel hits another control. External bait lights flash to life across the bioluminescent spectrum; the cabin lights dim. To the denizens of the rift, drawn in by the sonics, a veritable school of food fish has suddenly appeared in their midst.
+      </p>
+      <p>
+        "We don't know the secret of the Channer Vent. We don't know how it creates its strange and fascinating giants." The program's visual display goes dark. "We only know that here, on the shoulder of the Axial Volcano, we have finally tracked the monsters to their lair."
+      </p>
+      <p>
+        Something thumps against the outer hull. The acoustics of the passenger compartment make the sound seem unnaturally loud.
+      </p>
+      <p>
+        At last, the passengers shut up. Mr. Codpiece mutters something and heads back to his seat, a giant chloroplast in a hurry.
+      </p>
+      <p>
+        "This concludes our introduction. The external cameras are linked to your headsets and can be aimed using normal head movements. Focus and record using the joystick on your right armrest. You may also wish to enjoy the view directly, through any of the cabin viewports. If you require assistance our guide and pilot are at your service. Seabed Safaris welcomes you to the Channer Vent, and hopes that you enjoy the remainder of your tour." 
+      </p>
+      <p>
+         Two more thumps. A grey flash out the forward port; a sinuous belly caught for a moment in the headlight, a swirl of fin. On Joel's systems board, icons representing the outside cams dip and wiggle.
+      </p>
+      <p>
+        Superfluous Preteela slides into the copilot's seat. "Regular feeding frenzy out there."
+      </p>
+      <p>
+        Joel lowers his voice. "In here. Out there. What's the difference?" 
+      </p>
+      <p>
+        She smiles, a safe, silent gesture of agreement. She's got a great smile. Almost makes up for the striped hair. Joel catches sight of something on the back of her left hand; looks like a ref tattoo, but somehow he doubts that it's authentic. Fashion statement, more likely. 
+      </p>
+      <p>
+        "You sure they can spare you?" he asks wryly. 
+      </p>
+      <p>
+        She looks back. The cargo's starting up again: <em>Look at that. Hey, it broke its tooth on us. Christ aren't they</em> ugly&mdash;
+      </p>
+      <p>
+        "They'll manage," Preteela says.
+      </p>
+      <p>
+        Something looms up on the other side of the viewport: mouth like a sackful of needles, a tendril hanging from the lower jaw with a glowing bulb on the end. The jaw gapes wide enough to dislocate, snaps shut. Its teeth slide harmlessly across the viewport. A flat black eye glares in at them.
+      </p>
+      <p>
+        "What's that?" Preteela wants to know.
+      </p>
+      <p>
+        "You're the tour guide."
+      </p>
+      <p>
+        "Never seen anything like it before."
+      </p>
+      <p>
+        "Me neither." He sends a trickle of electricity out through the hull. The monster, startled, flashes off into the darkness. Intermittent impacts resonate through <em>Ceratius</em>, drawing renewed gasps from the cargo.
+      </p>
+      <p>
+        "How long until we're actually at Channer?"
+        </p>
+      <p>
+        Joel glances at tactical. "We're pretty much there already. Medium-sized hot fissure about fifty meters to the left."
+      </p>
+      <p>
+        "What's that?" A row of bright dots, evenly spaced, has just moved onto the screen. 
+      </p>
+      <p>
+        "Surveyer's stakes." Another row marches into range behind the first. "For the geothermal program, you know?"
+      </p>
+      <p>
+        "How about a quick drive-by? I bet those generators are pretty impressive."
+      </p>
+      <p>
+        "I don't think the generators are in yet. They're just laying the foundations."
+      </p>
+      <p>
+        "It'd still make a nice addition to the tour."
+      </p>
+      <p>
+        "We're supposed to steer clear. We'd catch royal shit if anyone's out there."
+      </p>
+      <p>
+        "Well?" That smile again, more calculated this time. "Is there?"
+      </p>
+      <p>
+        "Probably not," Joel admits. Construction's been on hold for a couple of weeks, a fact which he finds particularly irritating; he's up for some fairly hefty contracts if the Grid Authority ever gets off its corporate ass and finishes what they started.
+      </p>
+      <p>
+        Preteela looks at him expectantly. Joel shrugs. "It's pretty unstable in there. Could get bumped around a bit."
+      </p>
+      <p>
+        "Dangerous?"
+      </p>
+      <p>
+        "Depends on your definition. Probably not."
+      </p>
+      <p>
+        "So let's do it." Preteela lays a conspiratorial hand briefly on his shoulder.
+      </p>
+      <p>
+        <em>Ceratius</em> noses around to a new heading. Joel kills the bait lights and cranks the sonics up for one screeching, farewell burst. The monsters outside &mdash; those that haven't already retired gracefully, their tiny fish brains having figured out that metal is inedible &mdash; run screaming into the night, lateral lines burning. There's a moment of surprised silence from the cargo. Preteela Someone steps smoothly into the gap. "Folks, we're taking a small detour to check out a new arrival on the rift. If you tap into the sonar feed you'll see that we're approaching a checkerboard of acoustic beacons. The Grid Authority has laid these out in the course of constructing one of the new geothermal stations we've been hearing so much about. As you may know, similar projects are underway at spreading zones all the way from the Galapagos to the Aleutians. When these go online, people will actually be living full-time here on the rift&mdash;"
+      </p>
+      <p>
+        Joel can't believe it. Preteela's big chance to scoop the library and she ends up talking exactly like it does. He quietly aborts a midbrain fantasy he's been nurturing. Try to get into fantasy-Preteela's jumpsuit now and she'd probably start reciting a cheery blow-by-blow.
+      </p>
+      <p>
+        He switches on the external floods. Mud. More mud. On sonar the grid crawls towards them, a monotonous constellation.
+      </p>
+      <p>
+        Something catches <em>Ceratius</em>, slews it around. The hull thermistor spikes briefly.
+      </p>
+      <p>
+         "Thermal, folks." Joel calls back over his shoulder. "Nothing to worry about." 
+      </p>
+      <p>
+         A dim coppery sun resolves to starboard. It's a torch on a pole, basically, a territorial marker beating back the abyss with a sodium bulb and a VLF heartbeat. It's the Grid Authority, pissing on a rock for all and sundry: <em>This</em> is our <em>hellhole</em>. 
+      </p>
+      <p>
+        The line of towers stretches away to port, each crowned by a floodlight. Intersecting it, another line recedes directly ahead like streetlights on a smoggy night. They shine down on a strange unfinished landscape of plastic and metal. Great metal casings lie against the bottom like derailed boxcars. Teardrop ROVs sit dormant on flat plastic puddles frozen harder than basalt. Sharp-edged conduits protrude from those congealed surfaces like hollow bones sawn off below the joint.
+      </p>
+      <p>
+         Way up on one of the port towers, something dark and fleshy assaults the light.
+      </p>
+      <p>
+        Joels checks the camera icons: all zoomed, pointing up and left. Preteela, conserving O<sub>2</sub>, has retired her patter while the whitecaps gape. Fine. They want more mindless piscine violence, give 'em more mindless piscine violence. <em>Ceratius</em> angles up and to port. 
+      </p>
+      <p>
+        It's an anglerfish. She bashes herself repeatedly against the floodlight, oblivious to <em>Ceratius</em>' approach. Her dorsal spine lashes; the lure at its end, a glowing worm-shaped thing, luminesces furiously.
+      </p>
+      <p>
+         Preteela's back at his shoulder. "It's really doing a number on that light, isn't it?" 
+      </p>
+      <p>
+        She's right. The top of the transponder is shaking under the impact of the big fish's blows, which is odd; these beasts are big, but they aren't very strong. And come to think of it, the tower's shaking back and forth even when the angler isn't <em>touching</em> it...
+      </p>
+      <p>
+        "Oh, shit." Joel grabs the controls. <em>Ceratius</em> rears up like something living. Transponder glow drops off the bottom of the viewport; total darkness drops in from above, swallowing the view. Startled shouts from the cargo. Joel ignores them.
+      </p>
+      <p>
+        On all sides, the dull distant sound of something roaring.
+      </p>
+      <p>
+        Joel hits the throttle. <em>Ceratius</em> climbs. Something slaps from behind; the stern slides to port, pulling the bow back after it. The blackness beyond the viewport boils sudden muddy brown against the cabin lights.
+      </p>
+      <p>
+         The hull thermister spikes twice, three times. Ambient temperature flips from 4°C to 280, then back again. At lesser pressures the <em>Ceratius</em> would be dropping through live steam. Here it only spins, skidding for traction against the superheated water.
+      </p>
+      <p>
+        Finally, it finds some. <em>Ceratius</em> ascends into welcome icewater. A fish skeleton pirouettes past the viewport, all teeth and spines, every vestige of flesh boiled away.
+      </p>
+      <p>
+        Joel looks back over his shoulder. Preteela's fingers are locked around the back of his seat, their knuckles the same color as the dancing bones outside. The cargo are dead quiet.
+      </p>
+      <p>
+        "Another thermal?" Preteela says in a shaky voice. 
+      </p>
+      <p>
+        Joel shakes his head. "Seabed cracked open. It's really thin around here." He manages a brief laugh. "Told you things could get a bit unstable."
+      </p>
+      <p>
+        "Uh huh." She releases her grip on Joel's chair. Fingernail imprints linger in the foam. She leans over, whispers "Bring the cabin lights up a bit, will you? Sort of a nice living-room level&mdash;" and then she's headed aft, tending the cargo: "Well, <em>that</em> was exciting. But Joel assures us that little blowups like this happen all the time. Nothing to be worried about, although they <em>can</em> catch you offguard." 
+      </p>
+      <p>
+        Joel raises the cabin lights. The cargo sit quietly, still ostriched into their headsets. Preteela bustles among them, smoothing feathers. "And of course we still have the rest of our tour to look forward to..."
+      </p>
+      <p>
+        He ups the gain on sonar, focusses aft. A luminous storm swirls across the tactical display. Beneath it, a fresh ridge of oozing rock disfigures the GA's construction grid.
+      </p>
+      <p>
+        Preteela is back at his elbow. "Joel?" 
+      </p>
+      <p>
+        "They say people are going to be <em>living</em> down there?"
+      </p>
+      <p>
+        "Uh huh."
+      </p>
+      <p>
+        "Wow. Who?"
+      </p>
+      <p>
+        He looks at her. "Haven't you seen the PR threads? Only the best and the brightest. Holding back the everlasting night to stoke the fires of civilization."
+      </p>
+      <p>
+        "Seriously, Joel. Who?"
+      </p>
+      <p>
+        He shrugs. "Fucked if I know."
+      </p>
+    </div>
   </div>
   <script type="text/javascript" src="magic.js"></script>
+  <script type="text/javascript">
+    document.getElementById("home").style.display = "block";
+  </script>
 </body>
 </html>
