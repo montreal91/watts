@@ -11,6 +11,14 @@ body {
     font-family: 'Anaheim';
 }
 
+.report {
+    font-family: "Roboto Mono";
+}
+
+.center {
+    text-align: center;
+}
+
 .sidenav {
     background-color: #111;
     height: 100%;
