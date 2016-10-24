@@ -2,48 +2,41 @@ body {
     font-size: 115%;
 }
 
-.button {
-    margin-right: 50px;
-    border: none;
-    font-size: 150%;
-    font-family: "Anaheim";
-    color: #fff;
-    padding: 8px;
-    width: 100px;
-    text-align: center;
+.content {
+    animation: fade_effect 0.7s;
+    padding-left: 45px;
 }
 
-.content {
-    display: none;
-    animation: fade_effect 1s;
-}
-.invisible {
-    display: none;
-}
 .myfont {
     font-family: 'Anaheim';
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #111;
+    height: 100%;
+    left: 0;
+    max-width: 0;
     overflow: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    overflow-y: scroll;
+    padding-top: 105px;
+    position: fixed;
+    top: 0;
+    transition: 0.7s;
+    z-index: 1;
+    height: 100%;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 140%;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.7s;
+}
+
+.navlink.active {
+    background-color: #000;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
@@ -51,10 +44,11 @@ body {
 }
 
 .sidenav div.panel {
+    /*animation: fade_effect 0.7s;*/
     padding: 0 18px;
-    background-color: #252525;
+    /*background-color: #252525;*/
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: 0.7s;
     overflow: hidden;
     max-height: 0;
 }
@@ -64,15 +58,14 @@ body {
     max-height: 500px;
 }
 
-a.active {
+/*a.active {
     background-color: #000;
-}
+}*/
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
+.sidenav.show {
+    opacity: 1;
+    max-width: 300px;
+    width: 300px;
 }
 
 ul.topnav {
@@ -81,15 +74,18 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #111;
+    font-size: 190%;
 }
 
-ul.topnav .showsidebar {
-    margin-left: 185px;
+ul.topnav .first_nav_link {
+    margin-left: 300px;
+    /*margin-right: 8px;*/
 }
 
 ul.topnav li {
     float: left;
 }
+
 
 ul.topnav li a {
     display: inline-block;
@@ -98,11 +94,44 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration:none;
     transition: 0.3s;
-    font-size: 130%;
 }
+
+ul.topnav li a.active {
+    background-color: #000;
+}
+
+.nav_menu {
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+    z-index: 1;
+    border: 0;
+    text-align: center;
+    font-family: "Anaheim";
+    font-size: 200%;
+    width:55px;
+    height: 55px;
+    color: #818181;
+    background-color: #111;
+}
+
+.nav_menu:hover {
+    color: #f1f1f1;
+}
+
+.nav_menu.active {
+    background-color: #222;
+    width:55px;
+    height: 55px;
+}
+
 #main {
-    transition: margin-left .5s;
+    transition: margin-left 0.7s;
     padding: 20px;
+}
+
+#main.show {
+    margin-left: 300px;
 }
 
 @media screen and (max-height: 450px) {

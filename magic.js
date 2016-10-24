@@ -1,11 +1,8 @@
-function open_nav() {
-    document.getElementById("my_sidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
 
-function close_nav() {
-    document.getElementById("my_sidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+function open_nav(evt) {
+    document.getElementById("my_sidenav").classList.toggle("show");// style.width = "250px";
+    document.getElementById("main").classList.toggle("show");
+    evt.currentTarget.classList.toggle("active");
 }
 
 function open_tab(evt, tab_name) {
@@ -21,6 +18,14 @@ function open_tab(evt, tab_name) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(tab_name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function make_selected(evt) {
+    var navlinks = document.getElementsByClassName("navlink");
+    for (var i=0; i < navlinks.length; i++) {
+        navlinks[i].className = navlinks[i].className.replace(" active", "");
+    }
     evt.currentTarget.className += " active";
 }
 
